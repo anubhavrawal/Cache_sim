@@ -1,7 +1,7 @@
 import sys
 import numpy as np
-import time
 
+from Cache import Cache
 
 
 def main():
@@ -58,7 +58,7 @@ def main():
         return
     
     
-    #tmp = cache(s,E,b)
+    tmp = cache(s,E,b)
 
     hme_count = [0,0,0]
 
@@ -70,7 +70,6 @@ def main():
         print("Invalid file!!!!!")
         return
 
-     
     
     print("Hit:", hme_count[0] ," Miss", hme_count[1] ," eviction:", hme_count[2] )
 
