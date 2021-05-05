@@ -111,6 +111,8 @@ def main():
 
 
     for command in trace_vals:
+        if command[0] == "#":
+            continue
 
         program_time += 1 # Increase the program time for each new line
 

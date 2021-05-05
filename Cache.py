@@ -58,7 +58,7 @@ class Cache:
         oldest_index = -1
 
         #look through the index and search for the oldest time 
-        for line in range(1,E):
+        for line in range(0,E):
              #update each variable according if older information is found
             if self.mem[set_index][line].time < oldest_time:
                 oldest_index =  line
