@@ -87,9 +87,10 @@ def main():
         return
     
     try:
-        print("Bad File Name")
         fname = sys.argv[ sys.argv.index('-t') + 1]
+    
     except:
+        print("Bad File Name")
         usage()
         return
     
